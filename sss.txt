@@ -1,0 +1,46 @@
+from tkinter import *
+import random
+
+root = Tk()
+
+root.title("Luck Friend Wheel")
+root.geometry("400x500")
+
+list = ["Perplexed - completely baffled or puzzled" ,
+"Magnanimous - generous or forgiving, especially towards a rival or less powerful person"
+"Ostentatious - characterized by vulgar or pretentious display; designed to impress or attract notice"
+"Luminous - full of or shedding light; bright or shining, especially in the dark"
+"Pernicious - having a harmful effect, especially in a gradual or subtle way"
+"Voracious - having a very eager approach to an activity, especially eating or reading"
+"Ephemeral - lasting for a very short time; fleeting"
+"Insidious - proceeding in a gradual, subtle way, but with harmful effects"
+"Exacerbate - make (a problem, bad situation, or negative feeling) worse"
+"Ameliorate - make (something bad or unsatisfactory) better"
+"Disparage - regard or represent as being of little worth"
+"Altruistic - showing a selfless concern for the well-being of others; unselfish"
+"Ambivalent - having mixed feelings or contradictory ideas about something or someone"
+"Facetious - treating serious issues with deliberately inappropriate humor; flippant"
+"Ubiquitous - present, appearing, or found everywhere"
+"Resilient - able to withstand or recover quickly from difficult conditions"
+"Auspicious - conducive to success; favorable"
+"Myopic - lacking foresight or intellectual insight"
+"Reticent - not revealing one's thoughts or feelings readily; reserved"
+"Loquacious - tending to talk a great deal; talkative."]
+
+
+print(list)
+
+def random_number ():
+    random_no = random.randint(0,19)
+    print(random_no)
+    random_lucky_friend = list[random_no]
+    print("Your word is :"+ random_lucky_friend)
+    
+    
+    
+btn1 = Button(root)
+btn1 = Button(root, text= "YOUR WORD IS")    
+btn1.place(relx=0.5 , rely=0.5 , anchor= CENTER )
+
+root.mainloop()
+              
